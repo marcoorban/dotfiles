@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ENVIRONMENT VARIABLES
 export PS1="(ForeRunner)\[$(tput setaf 34)\]\u\[$(tput setaf 40)\]@\[$(tput setaf 46)\]\h \[$(tput setaf 154)\]\w \[$(tput sgr0)\]$ "
 #  Got the above code from robotmoon.com/bash-prompt-generator/
@@ -15,8 +14,3 @@ alias cleanup="rm err* & rm log* & rm *.err & rm *.log"
 alias activate="ml load miniconda3 && conda activate pinn"
 
 export PATH="$HOME/bin/:$PATH"
-=======
-# >>> Added by Spyder >>>
-alias uninstall-spyder=/Users/marcoorban/Library/spyder-6/uninstall-spyder.sh
-# <<< Added by Spyder <<<
->>>>>>> 7faae15bccb9ec7c8125c5e430d0b085c1508a1f
