@@ -1,16 +1,3 @@
-# ENVIRONMENT VARIABLES
-export PS1="(T2)\[$(tput setaf 34)\]\u\[$(tput setaf 40)\]@\[$(tput setaf 46)\]\h \[$(tput setaf 154)\]\w \[$(tput sgr0)\]$ "
-#  Got the above code from robotmoon.com/bash-prompt-generator/
-export USER_ID="u8330976"
-export FOAM_SIF="/home/$USER_ID/openfoam_images/openfoam-default-2312.sif"
-export FOAM_RUN="/usr/lib/openfoam/openfoam2312/"
-export FOAM_BASHRC="$FOAM_RUN/etc/bashrc"
-
-alias bashrc="vim ~/.bashrc"
-alias src="source ~/.bashrc"
-alias vimrc="vim ~/.vimrc"
-alias q="squeue | grep morban"
-alias cleanup="rm err* & rm log* & rm *.err & rm *.log"
-alias activate="ml load miniconda3 && conda activate pinn"
-
-export PATH="$HOME/bin/:$PATH"
+# >>> Added by Spyder >>>
+alias uninstall-spyder=/Users/marcoorban/Library/spyder-6/uninstall-spyder.sh
+# <<< Added by Spyder <<<
