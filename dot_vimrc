@@ -1,5 +1,8 @@
 execute pathogen#infect()
 
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 set nocompatible
 syntax on
 set nu
@@ -7,3 +10,4 @@ filetype indent plugin on
 
 colorscheme Tomorrow-Night-Eighties
 
+noremap <Leader>e :NERDTreeToggle<CR>
