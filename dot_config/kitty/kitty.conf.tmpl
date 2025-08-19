@@ -4,7 +4,7 @@ font_family	FireCodeRetina
 {{ if eq .chezmoi.os "darwin" }}
 shell /opt/homebrew/bin/fish
 {{ else if eq .chezmoi.os "linux"}}
-shell usr/bin/fish
+shell /usr/bin/fish
 {{ else }}
 shell default
 {{ end }}
