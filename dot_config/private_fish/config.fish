@@ -10,3 +10,5 @@ if test (uname) = "Darwin"
 end
 
 alias fsrc="source ~/.config/fish/config.fish"
+
+source ~/.config/.myenv.sh

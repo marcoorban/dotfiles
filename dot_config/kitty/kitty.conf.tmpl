@@ -1,11 +1,15 @@
-font_size	16
 font_family	FireCodeRetina
 
 {{ if eq .chezmoi.os "darwin" }}
 shell /opt/homebrew/bin/fish
+font_size 16
 {{ else if eq .chezmoi.os "linux"}}
 shell /usr/bin/fish
+font_size 14
 {{ else }}
 shell default
 {{ end }}
-
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME
