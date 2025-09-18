@@ -12,3 +12,6 @@ end
 alias fsrc="source ~/.config/fish/config.fish"
 
 source ~/.config/.myenv.sh
+
+export XCURSOR_THEME=Bibata-Modern_Ice
+export XCURSOR_SIZE=24
