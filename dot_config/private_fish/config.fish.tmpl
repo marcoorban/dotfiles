@@ -1,0 +1,25 @@
+set -g fish_greeting
+set -gx EDITOR (which nvim)
+set -gx VISUAL (which nvim)
+set -gx SHELL (which fish)
+
+fish_config theme choose Dracula
+alias fsrc="source ~/.config/fish/config.fish"
+
+## Run commands depending on the OS.
+{{ if eq .chezmoi.os "darwin" }}
+  # Add homebrew to the path
+  if test -d /opt/homebrew/bin
+        fish_add_path /opt/homebrew/bin
+        fish_add_path /opt/hombrew/sbin
+  end
+{{ else if eq .chezmoi.os "linux" }}
+{{ end }}
+
+## Run commands depending on the hostname
+{{ if eq .chezmoi.hostname "eos" }}
+set -gx HYPRSHOT_DIR "~/Pictures/Screenshots"
+{{ end }}
+
+# Adding Haskel and ghcup to fish path.
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /home/morban/.ghcup/bin # ghcup-env
