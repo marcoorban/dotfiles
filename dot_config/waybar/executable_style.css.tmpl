@@ -14,6 +14,14 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+{{ if eq .chezmoi.hostname "lab" }}
+
+#workspaces {
+  margin-left: 30px;
+}
+
+{{ end }}
+
 #workspaces {
     margin-right: 10px;
     padding-right: 8px;
