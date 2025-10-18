@@ -92,9 +92,13 @@ env = HYPRCURSOR_SIZE,24
 
 # https://wiki.hypr.land/Configuring/Variables/#general
 general {
+  {{ if eq .chezmoi.hostname "FedoraMac" }}
+    gaps_in = 5 
+    gaps_out = 5
+  {{ else }}
     gaps_in = 5
     gaps_out = 20
-
+  {{ end }}
     border_size = 2
 
     # https://wiki.hypr.land/Configuring/Variables/#variable-types for info about colors
