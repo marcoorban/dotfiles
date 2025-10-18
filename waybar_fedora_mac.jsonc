@@ -3,13 +3,12 @@
     "output": "eDP-1",
     "layer":"top",
     "position": "top",
-    "margin": "10 10 0 10",
-    "width": 300,
+    "margin": "0 0 0 0",
+    "width": 1200,
     "height": 10,
-    "spacing": 0,
+    "spacing": 5,
     "modules-left": [
       "hyprland/workspaces",
-      "custom/pacman",
     ],
     "modules-center": [
       "hyprland/window"
@@ -162,101 +161,4 @@
     "escape": true
     }
   },
-
-  {
-    "layer":"top",
-    "position":"top",
-    "output": "HDMI-A-1",
-    "height": 40,
-    "modules-left":[
-      "hyprland/workspaces"
-    ],
-
-    "modules-right": [
-       "bluetooth",
-       "pulseaudio",
-       "clock"
-    ],
-
-    "hyprland/workspaces": {
-        "disable-scroll": false,
-        "all-outputs": true,
-        "format": "{icon}",
-        "on-click": "activate",
-        "persistent-workspaces": {
-        "*":[1,2,3,4,5,6,7,8,9,0]
-        },
-        "format-icons": {
-          "1": "󰈹",
-          "2": "",
-          "3": "",
-          "4": "󰇮",
-          "5": "󰊴",
-          "6": "󰢐",
-          "7": "",
-          "8": "",
-          "9": "",
-          "0": ""
-        }
-      },
-
-   "clock": {
-    "interval": 1,
-    "timezone": "Asia/Taipei",
-    "format": "<span color='#BF00FF'>  </span>{:%H:%M} ",
-    "tooltip": true,
-    "tooltip-format": "{:L%Y 年 %m 月 %d 日, %A}",
-    "on-click": "org.gnome.Calendar"
-   },
-    "bluetooth": {
-      "format": "<span color='#00BFFF'>  </span>{status} ",
-      "format-connected": "<span color='#00BFFF'>  </span> {device_alias} ",
-      "format-connected-battery": "<span color='#00BFFF'>  </span> {device_alias} -- {device_battery_percentage}% ",
-      "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-      "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-      "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-      "on-click": "blueman-manager"
-    },
-   "network": {
-       "format-wifi": "<span color='#00FFFF'>  󰤨 </span>{essid} ",
-       "format-ethernet": "<span color='#7FFF00'>     </span>Wired ",
-       "tooltip-format": "<span color='#FF1493'> 󰅧   </span>{bandwidthUpBytes}  <span color='#00BFFF'> 󰅢    </span>{bandwidthDownBytes}",
-       "format-linked": "<span color='#FFA500'> 󱘖   </span>{ifname} (No IP) ",
-       "format-disconnected": "<span color='#FF4040'>    </span>Disconnected ",
-       "format-alt": "<span color='#00FFFF'> 󰤨   </span>{signalStrength}% ",
-       "interval": 1
-  },
-
-    "pulseaudio": {
-      "format": "<span color='#00FF7F'>{icon}</span>{volume}% ",
-      "format-muted": "<span color='#FF4040'>  󰖁 </span>0% ",
-      "format-icons": {
-        "headphone": "<span color='#BF00FF'>   </span>",
-        "hands-free": "<span color='#BF00FF'>   </span>",
-        "headset": "<span color='#BF00FF'>  </span>",
-        "default": [
-          "<span color='#808080'>  </span>",
-          "<span color='#FFFF66'>  </span>",
-          "<span color='#00FF7F'>  </span>"
-        ]
-      },
-      "on-click-right": "pavucontrol -t 3",
-      "on-click": "pactl -- set-sink-mute 0 toggle",
-      "tooltip": true,
-      "tooltip-format": "Volume: {volume}%"
-    },
-
-
-  },
-
-  {
-    "output":"DP-1",
-    "layer":"bottom",
-    "position":"bottom",
-    "modules-center": [
-      "wlr/taskbar"
-    ]
-  }
-
 ]
