@@ -1,0 +1,62 @@
+[{
+    "output": "DP-1",
+    "layer":"top",
+    "position": "top",
+    "margin": "10 20 0 20",
+    "height": 8,
+    "spacing": 0,
+
+    "include": [
+      "~/.config/waybar/modules.json"
+    ],
+
+    "modules-left": [
+      "custom/power",
+      "custom/reboot",
+      "custom/lock",
+      "custom/logout",
+      "hyprland/workspaces",
+      "custom/pacman",
+    ],
+    "modules-center": [
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "cpu",
+      "memory",
+      "network",
+      "bluetooth",
+      "pulseaudio",
+      "custom/swaync",
+      "custom/weather",
+      "tray",
+      "clock",
+    ],
+  },
+
+  {
+    "layer":"top",
+    "position":"top",
+    "output": "HDMI-A-1",
+    "height": 8,
+    "margin": "8 5 0 5",
+
+    "include": [
+      "~/.config/waybar/modules.json"
+    ],
+
+    "modules-left":[
+      "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+      "cpu",
+      "network",
+      "bluetooth",
+      "pulseaudio",
+      "custom/swaync",
+      "tray",
+      "clock"
+    ],
+  },
+]
