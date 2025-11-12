@@ -24,3 +24,5 @@ set -gx HYPRSHOT_DIR "~/Pictures/Screenshots"
 
 # Adding Haskel and ghcup to fish path.
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /home/morban/.ghcup/bin # ghcup-env
+
+starship init fish | source
