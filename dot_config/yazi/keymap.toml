@@ -1,5 +1,0 @@
-[[mgr.prepend_keymap]]
-on = "<C-o>"
-run = 'shell "dolphin \"$PWD\""'
-desc = "Open current folder with Dolphin."
-
