@@ -3,6 +3,6 @@ return {
   opts = {
     char = "│", -- thin vertical bar
     highlight = "VirtColumn",
-    virtcolumn = "80", -- same as colorcolumn
+    virtcolumn = "120", -- same as colorcolumn
   },
 }
